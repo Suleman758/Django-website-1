@@ -3,16 +3,23 @@ from datetime import datetime
 from django.shortcuts import render,HttpResponse
 
 from home.models import Contact
+import logging
+logging = logging.getLogger(__name__)
+
+from django.contrib.auth import authenticate,login,logout
 
 # Create your views here.
-def index(request):                  
+def index(request):
+    logging.info("index page is opened")
     return render(request,'index.html')
     #return HttpResponse("this is home page") 
 
 def about(request):
+    logging.info("about page is opened")
     return HttpResponse("this is about page")
 
 def services(request):
+    logging.info("services page is opened")
     return HttpResponse("this is services page")
 
 def contact(request):
