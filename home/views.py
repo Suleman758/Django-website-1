@@ -20,7 +20,7 @@ def about(request):
 
 def services(request):
     logging.info("services is opened")
-    return HttpResponse("this is services page")
+    return HttpResponse("services page")
 
 def contact(request):
     logging.info("contact page opened")
