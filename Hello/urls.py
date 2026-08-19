@@ -19,7 +19,7 @@ from django.urls import include, path
 
 admin.site.site_header = "NVIDIA"
 admin.site.site_title = "NVIDIA Admin Portal"
-admin.site.index_title = "Welcome to NVIDIA Portal"
+admin.site.index_title = "Welcome to NVIDIA Portal" 
 
 
 
