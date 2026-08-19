@@ -23,7 +23,7 @@ def services(request):
     return HttpResponse("this is services page")
 
 def contact(request):
-    logging.info("contact page is opened")
+    logging.info("contact page opened")
     if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
